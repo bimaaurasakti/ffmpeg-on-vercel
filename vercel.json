@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "api/upload.js": {
+      "maxDuration": 60,
+      "memory": 1024,
+      "maxRequestSize": "50mb"
+    }
+  }
+}
