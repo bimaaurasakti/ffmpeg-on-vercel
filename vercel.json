@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
-    "convert/*.ts": {
+    "app/convert/*.ts": {
         "memory": 1024,
         "maxDuration": 30
     }
