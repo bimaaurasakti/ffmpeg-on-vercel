@@ -2,7 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "convert/*.ts": {
-        "maxRequestSize": "50mb",
         "memory": 3009,
         "maxDuration": 30
     }
