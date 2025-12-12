@@ -98,11 +98,9 @@ export default function Home() {
                 "output.mp4",
             ]); 
 
-            const data = await ffmpeg.readFile('output.mp4');
+            const data = await ffmpeg.readFile('output.mp4') as Uint8Array;
 
-            console.log(data)
-
-            const videoBlob = new Blob([data.buffer], { type: "video/mp4" });
+            const videoBlob = new Blob([new Uint8Array(data)], { type: "video/mp4" });
             const url = URL.createObjectURL(videoBlob);
 
             setVideoUrl(url);
